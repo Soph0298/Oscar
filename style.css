@@ -1,0 +1,243 @@
+html {
+  font-size: 62.5%;
+  color: rgb(191, 184, 179);
+  font-family: "roboto";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 
+.iframe.wrapper {
+  position: relative;
+  width 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+
+iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9; }DETTE VIRKER FØRST EFTER 1. JUNI*/
+
+body {
+  background-color: rgb(42, 39, 39);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: inherit;
+  list-style: none;
+}
+
+header a {
+  font-size: 1rem;
+  font-family: "roboto", sans-serif;
+  color: rgb(243, 157, 44);
+}
+
+header a:hover {
+  color: whitesmoke;
+}
+
+#home_section {
+  background-image: url(billeder/baggrundsbillede.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: 75% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.5fr 1fr;
+  margin-top: -32px;
+}
+
+#home_section h1 {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  font-size: 4rem;
+  font-family: "anton", sans-serif;
+  font-stretch: condensed;
+  border-top: 1px rgb(57, 53, 53);
+}
+
+h1 {
+  font-family: "anton", sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "roboto", sans-serif;
+}
+
+#home_section h2 {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  font-size: 2rem;
+}
+
+#home_section p {
+  margin-top: 1rem;
+  grid-column: 2/4;
+  grid-row: 6/7;
+}
+
+#play_knap {
+  grid-column: 2/3;
+  grid-row: 8/9;
+  background-color: rgb(243, 157, 44);
+  color: black;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+#info_knap {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  background-color: rgb(243, 157, 44);
+  color: black;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+#movie_section {
+  margin-top: 2rem;
+  background-color: rgb(17, 16, 16);
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+#photo_section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  color: black;
+  background-color: rgb(191, 184, 179);
+}
+
+#oscar_section {
+  margin-top: 2rem;
+  background-color: rgb(191, 184, 179);
+  padding: 1.5rem;
+  color: black;
+}
+
+.gallery_landscape {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery_portrait {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+}
+
+/* 
+#landscape {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto);
+  gap: 1rem;
+}
+
+#portrait {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+} */
+
+#documentation_section {
+  margin-top: 2rem;
+  background-color: rgb(17, 16, 16);
+  padding: 1.5rem;
+}
+
+/* .......MOBILE FIRST ABOVE - 
+..........WEBSITE from 610px BELOW.....*/
+
+@media (min-width: 610px) {
+  #home_section h1 {
+    font-size: 10rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #home_section {
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.5fr 1fr;
+  }
+}
+
+/* WEBSITE from 610px ABOVE - 
+...WEBSITE 1000px BELOW......
+..................................................*/
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  #home_section p {
+    font-size: 1.5rem;
+  }
+
+  #home_section {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.5fr 1fr;
+  }
+}
