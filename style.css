@@ -15,7 +15,6 @@ img {
   display: block;
 }
 
-
 #layout {
   /* width: 40%;
   height: auto;
@@ -32,15 +31,13 @@ img {
   grid-column: 2/4;
 }
 
-
-
 video {
   width: 100%;
   height: auto;
   display: block;
 }
 
-
+/* 
 .iframe.wrapper {
   position: relative;
   width 100%;
@@ -54,8 +51,8 @@ iframe {
   inset: 0;
   width: 100%;
   height: 100%;
-}
-  /* aspect-ratio: 16/9; }DETTE VIRKER FØRST EFTER 1. JUNI */
+} */
+/* aspect-ratio: 16/9; }DETTE VIRKER FØRST EFTER 1. JUNI */
 
 body {
   background-color: rgb(42, 39, 39);
@@ -66,6 +63,10 @@ header nav {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.orange {
+  color: rgb(243, 157, 44);
 }
 
 header nav ul {
@@ -93,7 +94,7 @@ header a:hover {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.5fr 1fr;
-  margin-top: -32px;
+  margin-top: -45px;
 }
 
 #home_section h1 {
@@ -157,7 +158,7 @@ h2 {
 
 #photo_section {
   margin-top: 2rem;
-  margin-buttom: 2rem;
+  margin-bottom: 2rem;
   padding: 1.5rem;
   background-color: rgb(19, 18, 18);
 }
@@ -185,7 +186,6 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0.5rem;
 }
-
 
 #documentation_section {
   margin-top: 2rem;
@@ -250,9 +250,9 @@ h2 {
   }
 
   #documentation_section {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  gap: 1rem;
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+  }
 }
