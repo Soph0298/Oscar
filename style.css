@@ -15,13 +15,19 @@ img {
   display: block;
 }
 
+
+#layout {
+  width: 30vw;
+  height: auto;
+}
+
 video {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* 
+
 .iframe.wrapper {
   position: relative;
   width 100%;
@@ -35,7 +41,8 @@ iframe {
   inset: 0;
   width: 100%;
   height: 100%;
-  aspect-ratio: 16/9; }DETTE VIRKER FØRST EFTER 1. JUNI*/
+}
+  /* aspect-ratio: 16/9; }DETTE VIRKER FØRST EFTER 1. JUNI */
 
 body {
   background-color: rgb(42, 39, 39);
@@ -132,22 +139,20 @@ h2 {
 #movie_section {
   margin-top: 2rem;
   background-color: rgb(17, 16, 16);
-  padding-left: 2rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
 }
 
 #photo_section {
   margin-top: 2rem;
+  margin-buttom: 2rem;
   padding: 1.5rem;
-  color: black;
-  background-color: rgb(191, 184, 179);
+  background-color: rgb(19, 18, 18);
 }
 
 #oscar_section {
   margin-top: 2rem;
-  background-color: rgb(191, 184, 179);
+  background-color: rgb(19, 18, 18);
   padding: 1.5rem;
-  color: black;
 }
 
 .gallery_landscape {
@@ -168,20 +173,6 @@ h2 {
   gap: 0.5rem;
 }
 
-/* 
-#landscape {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto);
-  gap: 1rem;
-}
-
-#portrait {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 1rem;
-} */
 
 #documentation_section {
   margin-top: 2rem;
@@ -239,5 +230,9 @@ h2 {
   #home_section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.5fr 1fr;
+  }
+
+  nav ul a {
+    font-size: 2rem;
   }
 }
